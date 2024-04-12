@@ -8,9 +8,8 @@ void printSubsequences(int i,vector<int>&b,int arr[],int n)
      {
      for (auto v:b) cout<<v;
      if(b.size()==0)
-     {
         cout<<"{}";
-     }
+     
      cout<<endl;
      return;
      }
