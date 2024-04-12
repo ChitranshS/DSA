@@ -1,4 +1,4 @@
-// Recursion on subseqences
+// Recursion on subseqences || Printing subsequences of an array
 #include<bits/stdc++.h>
 using namespace std;
 void printSubsequences(int i,vector<int>&b,int arr[],int n)
