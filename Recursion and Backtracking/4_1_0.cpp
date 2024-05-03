@@ -6,9 +6,8 @@ using namespace std;
 bool sumk(int i, vector<int> a, int arr[], int n, int k)
 {
     if (i==n)
-    {   int sum = 0;
-        for (auto it:a) sum+=it;
-        if (sum==k)
+    {  
+        if (k==0)
         {
             for (auto v:a) cout<<v<<" ";
             cout<<endl;
@@ -19,7 +18,7 @@ bool sumk(int i, vector<int> a, int arr[], int n, int k)
     }
     
     a.push_back(arr[i]);
-    if (sumk(i + 1, a, arr, n, k)) return true;
+    if (sumk(i, a, arr, n, k-arr[i])) return true;
     a.pop_back();
     if (sumk(i + 1, a, arr, n, k)) return true;
     
