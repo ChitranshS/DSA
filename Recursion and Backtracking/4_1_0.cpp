@@ -1,6 +1,6 @@
 // Recursion on subseqences || Printing the 1st subsequences whose sum is k
 //Here the time complexity is O(n*2^n)
-// If we pass sum as a parameter we could get time complexity as O(2^n)
+// If we pass sum asa parameter we could get time complexity as O(2^n)
 #include <bits/stdc++.h>
 using namespace std;
 bool sumk(int i, vector<int> a, int arr[], int n, int k)
