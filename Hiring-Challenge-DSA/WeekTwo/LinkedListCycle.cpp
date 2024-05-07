@@ -12,7 +12,8 @@ struct ListNode {
 bool hasCycle(ListNode * head)
 {
     if(head== NULL)
-    return false;
+    {
+    
     ListNode * temp = head;
     map <ListNode*,bool> visited;
     while(temp!=NULL)
@@ -29,6 +30,7 @@ bool hasCycle(ListNode * head)
 
     }
     return false;
+}
 }
 
 int main()
