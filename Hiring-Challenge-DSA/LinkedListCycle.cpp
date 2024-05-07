@@ -14,16 +14,15 @@ bool hasCycle(ListNode * head)
     if(head== NULL)
     return false;
     ListNode * temp = head;
-    map <ListNode*,int> visited;
-    while(1)
+    map <ListNode*,bool> visited;
+    while(temp!=NULL)
     {
-        if(temp->next == NULL)
-        return false;
-        visited[temp]++;
-         if(visited[temp]>1)
+        
+         if(visited[temp] == true)
         {
             return true;
         }
+        visited[temp] = true;
         temp = temp->next;
 
        
