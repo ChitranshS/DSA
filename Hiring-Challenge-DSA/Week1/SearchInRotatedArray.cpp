@@ -8,7 +8,6 @@ int searchInRotatedArray(vector <int> nums,int target)
    {
     int mid = (low+high)/2;
     if(nums[mid]==target) return mid;
-
     if(nums[low]<= nums[mid])
     {
         if(nums[low]<=target && target<= nums[mid])

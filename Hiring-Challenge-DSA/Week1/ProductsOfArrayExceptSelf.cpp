@@ -12,7 +12,7 @@ vector<int> productESelf(vector <int> arr)
     {
      rightSum[i]= rightSum[i+1] * arr[i+1];   
 
-    }
+    }   
     vector<int> finalSum;
     for (int i=0;i<arr.size();i++)
     {

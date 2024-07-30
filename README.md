@@ -13,3 +13,8 @@
 - Number Theory
 - Tries
 - Bit Manipulation
+
+
+# SDE Sheet by Striver
+## Arrays
+ - Set Matrix Zeros (Leetcode Medium)
